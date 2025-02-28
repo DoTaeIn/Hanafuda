@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: 7b77a89c433c545fd86e2826754ef75b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 834
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b369532521da841e987e528cb6c95acf
+      internalID: 1755829483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 834
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe7aa0a78b13450c911bfb8a5c1fe1b
+      internalID: 1188484691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 834
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d4288cdee9c4447b12b3390ce34fe2
+      internalID: -383891237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_3
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 834
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cefe84df95014889925ecf8d7e8187b
+      internalID: -650010518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_4
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 834
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6104d74ad44b74b12a943efe40f8afbe
+      internalID: 1578189973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_5
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 834
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602891d0cc8194dbc9a53a1501896915
+      internalID: -2080445602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_6
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 834
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3daa3851f5d14424eb0788fc7f557a21
+      internalID: -1030243447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_7
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 834
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781ea43c0c2164a20a23b7dafb1a47c9
+      internalID: 1536241868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_8
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 669
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eea9631206be4d1cb2ef9fb49cd4d37
+      internalID: 1619883025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_9
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 669
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebfb34b227c449ba88831507a4fd3a9
+      internalID: -498668640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_10
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 669
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ee8225b5731485695049731cb72030
+      internalID: 325930516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_11
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 669
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7093fda6bea04504948106f82ea5060
+      internalID: -758352100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_12
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 669
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b26cc14922bc40f5b2d1e033e7f1888
+      internalID: 1391374505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_13
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 669
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ed046ecb6e4429cab5aa84efdc12e6
+      internalID: 71809837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_14
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 669
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72651f742797d4540aefc747ac0fc64c
+      internalID: 659723547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_15
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 669
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56325ac46ae7479ab3cc3755dbd8812
+      internalID: -868792641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 504
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a23bf0b053f46199ae16fff8245ca0
+      internalID: -1224194839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 504
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8d987b951a44bfca299c978ad86966
+      internalID: 987833410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_18
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 504
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d616e28848fe419f967ac16694b6aa9
+      internalID: -1462306003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_19
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 504
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15613536483a14acba8c8ae694ab3916
+      internalID: 1632752351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_20
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 504
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff63bed9f5af34c178cd879469a48bde
+      internalID: 1607186025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_21
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 504
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddf17a6c4d8b4723b0d9c0e975b1e94
+      internalID: -449681818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_22
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 504
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5085d7fd4ae4bdfb63450df5278f0b
+      internalID: -829310523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_23
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 504
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645107092c52543ec86b117629fe8830
+      internalID: -1508248446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 339
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d58f9a8c77be41ac8a54016c9e4a297
+      internalID: -576753084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_25
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 339
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c428f21b83447bc834a50887714c5c
+      internalID: 63835948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_26
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 339
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de105ec431a3d4bbea22b1152a685a4e
+      internalID: 430342382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_27
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 339
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a59860241354bfda4bad31a295ad95
+      internalID: -1652427543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_28
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 339
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40be701c8c5f04faeb3481690388f292
+      internalID: 474298874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_29
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 339
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62f12af16eba4bacac8ecbc16a0f826
+      internalID: -1910979730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_30
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 339
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d52e1362076c4e18823fe1e7d36ae63
+      internalID: -627835611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_31
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 339
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da383313d4ee49a383d9f14b5bb1917
+      internalID: 1771624106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_32
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 174
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30941c29cf3c42c2bf1857ddce2387c
+      internalID: 84939408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_33
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 174
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1381a1292044449989e4045ef79365cf
+      internalID: 2057145616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_34
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 174
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4195c19cb388a4263b9dc4b06a7ed054
+      internalID: 1086526374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_35
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 174
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd7bb7b546bf49fa96046ba00d14b71
+      internalID: 1932772907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_36
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 174
+        width: 104
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a4ecafcc9e0491abd0668969a00de9
+      internalID: -713012465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_37
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 174
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30e6a75a8d6041a5b09cfaf6444efd5
+      internalID: -349018609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_38
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 174
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cd2f2f0cb8940158559126d700a3a3
+      internalID: -948374917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_39
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 174
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3e117ca716a4fcfa16e5ccf4129359
+      internalID: -796063723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_40
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 9
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4baa8ddd40bc84b8e82daf6d567253f1
+      internalID: 944569139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_41
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 9
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91314146cefb640d08fff06a7935abff
+      internalID: -1529660154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_42
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 9
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607f91870bbcc4aec93d76dd23bdfa01
+      internalID: -643998976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_43
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 9
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cdfd2cd820e48fbaaad42e92bcaf12
+      internalID: -752817082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_44
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 9
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34df71a33be94a6a8db431870a8d0d1
+      internalID: -1613847080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_45
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 9
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a52eae98c51c4b7c979e0a899c0ed06
+      internalID: -461274004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_46
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 9
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13028f8d2e33d4d5e9b07b6e1d35b515
+      internalID: -1660915080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanafuda_by_penu31_dfvits3 1_47
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 9
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52444b0456c94ec59751bc1c5cd47ca
+      internalID: 1365387184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      hanafuda_by_penu31_dfvits3 1_0: 1755829483
+      hanafuda_by_penu31_dfvits3 1_1: 1188484691
+      hanafuda_by_penu31_dfvits3 1_10: 325930516
+      hanafuda_by_penu31_dfvits3 1_11: -758352100
+      hanafuda_by_penu31_dfvits3 1_12: 1391374505
+      hanafuda_by_penu31_dfvits3 1_13: 71809837
+      hanafuda_by_penu31_dfvits3 1_14: 659723547
+      hanafuda_by_penu31_dfvits3 1_15: -868792641
+      hanafuda_by_penu31_dfvits3 1_16: -1224194839
+      hanafuda_by_penu31_dfvits3 1_17: 987833410
+      hanafuda_by_penu31_dfvits3 1_18: -1462306003
+      hanafuda_by_penu31_dfvits3 1_19: 1632752351
+      hanafuda_by_penu31_dfvits3 1_2: -383891237
+      hanafuda_by_penu31_dfvits3 1_20: 1607186025
+      hanafuda_by_penu31_dfvits3 1_21: -449681818
+      hanafuda_by_penu31_dfvits3 1_22: -829310523
+      hanafuda_by_penu31_dfvits3 1_23: -1508248446
+      hanafuda_by_penu31_dfvits3 1_24: -576753084
+      hanafuda_by_penu31_dfvits3 1_25: 63835948
+      hanafuda_by_penu31_dfvits3 1_26: 430342382
+      hanafuda_by_penu31_dfvits3 1_27: -1652427543
+      hanafuda_by_penu31_dfvits3 1_28: 474298874
+      hanafuda_by_penu31_dfvits3 1_29: -1910979730
+      hanafuda_by_penu31_dfvits3 1_3: -650010518
+      hanafuda_by_penu31_dfvits3 1_30: -627835611
+      hanafuda_by_penu31_dfvits3 1_31: 1771624106
+      hanafuda_by_penu31_dfvits3 1_32: 84939408
+      hanafuda_by_penu31_dfvits3 1_33: 2057145616
+      hanafuda_by_penu31_dfvits3 1_34: 1086526374
+      hanafuda_by_penu31_dfvits3 1_35: 1932772907
+      hanafuda_by_penu31_dfvits3 1_36: -713012465
+      hanafuda_by_penu31_dfvits3 1_37: -349018609
+      hanafuda_by_penu31_dfvits3 1_38: -948374917
+      hanafuda_by_penu31_dfvits3 1_39: -796063723
+      hanafuda_by_penu31_dfvits3 1_4: 1578189973
+      hanafuda_by_penu31_dfvits3 1_40: 944569139
+      hanafuda_by_penu31_dfvits3 1_41: -1529660154
+      hanafuda_by_penu31_dfvits3 1_42: -643998976
+      hanafuda_by_penu31_dfvits3 1_43: -752817082
+      hanafuda_by_penu31_dfvits3 1_44: -1613847080
+      hanafuda_by_penu31_dfvits3 1_45: -461274004
+      hanafuda_by_penu31_dfvits3 1_46: -1660915080
+      hanafuda_by_penu31_dfvits3 1_47: 1365387184
+      hanafuda_by_penu31_dfvits3 1_5: -2080445602
+      hanafuda_by_penu31_dfvits3 1_6: -1030243447
+      hanafuda_by_penu31_dfvits3 1_7: 1536241868
+      hanafuda_by_penu31_dfvits3 1_8: 1619883025
+      hanafuda_by_penu31_dfvits3 1_9: -498668640
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
