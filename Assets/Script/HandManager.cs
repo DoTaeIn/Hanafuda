@@ -26,6 +26,8 @@ public class HandManager : MonoBehaviour
         hands = GetComponentsInChildren<CardObj>().ToList();
     }
     
+    public void setHands(List<CardObj> hands){this.hands = hands;}
+    
     bool AreListsEqual<T>(List<T> list1, List<T> list2)
     {
         return list1.Count == list2.Count && !list1.Except(list2).Any() && !list2.Except(list1).Any();

@@ -532,6 +532,7 @@ GameObject:
   - component: {fileID: 4863006761216230862}
   - component: {fileID: 8758529998281987017}
   - component: {fileID: 8099774628527047024}
+  - component: {fileID: 7394264841965977987}
   m_Layer: 5
   m_Name: User Block
   m_TagString: Untagged
@@ -636,7 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 0
+  GlobalObjectIdHash: 480298285
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -645,3 +646,16 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &7394264841965977987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7298742363772418496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 350abe8ca00d8416993e66394e59964d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardNums: []

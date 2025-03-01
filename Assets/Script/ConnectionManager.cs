@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
@@ -14,6 +15,8 @@ using UnityEngine;
 public class ConnectionManager : MonoBehaviour
 {
     private NetworkManager networkManager;
+    public string code;
+    public int maxConnections = 3;
 
     private void Awake()
     {
@@ -23,16 +26,28 @@ public class ConnectionManager : MonoBehaviour
     private async void Start()
     {
         await UnityServices.InitializeAsync();
-        await AuthenticationService.Instance.SignInAnonymouslyAsync();
+        if (!AuthenticationService.Instance.IsSignedIn)
+        {
+            await AuthenticationService.Instance.SignInAnonymouslyAsync();
+        }
     }
 
-    private async Task<string> StartRelayHost(int maxConnections = 3)
+    public async void CreateGame()
     { 
         Allocation a =  await RelayService.Instance.CreateAllocationAsync(maxConnections); 
         NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(new RelayServerData(a, "dtls"));
         
         string joinCode = await RelayService.Instance.GetJoinCodeAsync(a.AllocationId);
-        
-        return NetworkManager.Singleton.StartHost() ? joinCode : null;
+
+        code = NetworkManager.Singleton.StartHost() ? joinCode : "";
     }
+
+    public async void JoinGame(string joinCode)
+    {
+        JoinAllocation joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCode: joinCode);
+        NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(new RelayServerData(joinAllocation, "dtls"));
+        Debug.Log(!string.IsNullOrEmpty(joinCode) && NetworkManager.Singleton.StartClient());
+    }
+    
+    
 }
