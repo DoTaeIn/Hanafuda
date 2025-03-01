@@ -6,13 +6,52 @@
   <component name="ChangeListManager">
     <list default="true" id="23f8dde9-ee67-4fca-a2d1-acdf79f35848" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DefaultNetworkPrefabs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultNetworkPrefabs.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/User Block.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/User Block.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/ConnectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ConnectionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/APR/Apr-A.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/APR/Apr-A.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/APR/Apr-D1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/APR/Apr-D1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/APR/Apr-D2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/APR/Apr-D2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/APR/Apr-FRS.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/APR/Apr-FRS.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/AUG/Aug-A.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/AUG/Aug-A.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/AUG/Aug-D1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/AUG/Aug-D1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/AUG/Aug-D2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/AUG/Aug-D2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/AUG/Aug-L.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/AUG/Aug-L.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/FEB/Feb-A.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/FEB/Feb-A.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/FEB/Feb-D1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/FEB/Feb-D1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/FEB/Feb-D2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/FEB/Feb-D2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/FEB/Feb-FRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/FEB/Feb-FRP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/JAN/Jan-D2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/JAN/Jan-D2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/JAN/Jan-L.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/JAN/Jan-L.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/JAN/Jan-S.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/JAN/Jan-S.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/JUL/Jul-A.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/JUL/Jul-A.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/JUL/Jul-D1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/JUL/Jul-D1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/JUL/Jul-D2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/JUL/Jul-D2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/JUL/Jul-FRS.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/JUL/Jul-FRS.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/JUN/Jun-A.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/JUN/Jun-A.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/JUN/Jun-D1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/JUN/Jun-D1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/JUN/Jun-D2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/JUN/Jun-D2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/JUN/Jun-FBP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/JUN/Jun-FBP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/MAR/Mar-D1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/MAR/Mar-D1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/MAR/Mar-D2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/MAR/Mar-D2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/MAR/Mar-FRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/MAR/Mar-FRP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/MAR/Mar-L.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/MAR/Mar-L.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/MAY/May-A.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/MAY/May-A.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/MAY/May-D1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/MAY/May-D1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/MAY/May-D2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/MAY/May-D2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/MAY/May-FRS.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/MAY/May-FRS.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/OCT/Oct-A.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/OCT/Oct-A.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/OCT/Oct-D1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/OCT/Oct-D1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/OCT/Oct-D2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/OCT/Oct-D2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/OCT/Oct-FBP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/OCT/Oct-FBP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/SEP/Sep-A.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/SEP/Sep-A.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/SEP/Sep-D1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/SEP/Sep-D1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/SEP/Sep-D2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/SEP/Sep-D2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card Datas/SEP/Sep-FBP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card Datas/SEP/Sep-FBP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CardData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CardData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/HandManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HandManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,18 +61,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DoTaeIn"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DoTaeIn&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/DoTaeIn/Hanafuda.git",
-    "accountId": "1e3c8a23-68b3-4ebd-a8b4-d52567c39379"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DoTaeIn/Hanafuda.git&quot;,
+    &quot;accountId&quot;: &quot;1e3c8a23-68b3-4ebd-a8b4-d52567c39379&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/CardData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CardObj.cs" root0="FORCE_HIGHLIGHTING" />
@@ -42,10 +81,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/EnumConditionDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HandManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/UserBlockManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.netcode.gameobjects@1.12.0/Runtime/Connection/NetworkConnectionManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.netcode.gameobjects@1.12.0/Runtime/Core/NetworkManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.netcode.gameobjects@1.12.0/Runtime/Core/NetworkObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../My project_clone_0/Assets/Script/PlayerManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../My project_clone_0/Assets/Script/UserBlockManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../My project_clone_0/Library/PackageCache/com.unity.netcode.gameobjects@1.12.0/Runtime/Messaging/Messages/RpcMessages.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../My project_clone_0/Library/PackageCache/com.unity.netcode.gameobjects@1.12.0/Runtime/NetworkVariable/NetworkVariableBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../My project_clone_0/Library/PackageCache/com.unity.services.relay@1.1.1/Runtime/SDK/WrappedRelayService.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -61,7 +104,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/Connection",
+    "git-widget-placeholder": "Develop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -124,7 +167,7 @@
       <updated>1740563232426</updated>
       <workItem from="1740563233361" duration="5476000" />
       <workItem from="1740673421448" duration="7509000" />
-      <workItem from="1740732201396" duration="26762000" />
+      <workItem from="1740732201396" duration="39923000" />
     </task>
     <servers />
   </component>

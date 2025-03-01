@@ -36,6 +36,7 @@ public enum m_Stripe_Type
 [CreateAssetMenu(fileName = "new Card", menuName = "Cards")]
 public class CardData : ScriptableObject
 {
+    [SerializeField] private int m_CardID;
     [SerializeField] private Sprite m_Sprite;
     [SerializeField] private m_Month month = m_Month.January;
     [SerializeField] private m_Type type = m_Type.Default;
@@ -50,12 +51,13 @@ public class CardData : ScriptableObject
     public m_Month Month { get => month; }
     public m_Type Type { get => type; }
     
+    public int CardID { get => m_CardID; }
+    
     public bool isLight() {return type == m_Type.Light;}
 
     public m_Stripe_Type? StripeType()
     {
         return type == m_Type.Default ? (m_Stripe_Type?)null : stripeType;
     }
-    
     
 }

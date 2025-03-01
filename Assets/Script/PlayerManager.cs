@@ -13,7 +13,7 @@ public class PlayerManager : NetworkBehaviour
     Button betButton;
     Button dieButton;
     
-    public List<CardData> cardNums = new List<CardData>();
+    public NetworkList<int> cardNums = new NetworkList<int>();
     public int betMoney;
     public int myMoney = 100;
     private void Awake()
@@ -37,7 +37,30 @@ public class PlayerManager : NetworkBehaviour
         {
             Debug.Log(gameObject.name + " not spawned");
         }
+        
+        if (IsClient)
+        {
+            cardNums.OnListChanged += (changeEvent) =>
+            {
+                Debug.Log($"[PlayerManager] Card List Updated: {string.Join(", ", cardNums)}");
+                
+                if (cardNums.Count >= 2)
+                {
+                    RequestShowCardsServerRpc();
+                }
+            };
+        }
     }
+    
+    [ServerRpc(RequireOwnership = false)]
+    private void RequestShowCardsServerRpc(ServerRpcParams rpcParams = default)
+    {
+        ulong clientId = rpcParams.Receive.SenderClientId;
+        Debug.Log($"[RequestShowCardsServerRpc] Received request from Client {clientId}, sending ShowCardsRpc.");
+
+        gameManager.ShowCardsRpc(clientId);
+    }
+
     
 
 

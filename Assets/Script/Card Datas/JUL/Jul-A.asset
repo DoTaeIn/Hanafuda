@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d702c193cb714f2fa528e23082b12d5, type: 3}
   m_Name: Jul-A
   m_EditorClassIdentifier: 
+  m_CardID: 26
   m_Sprite: {fileID: -1652427543, guid: 7b77a89c433c545fd86e2826754ef75b, type: 3}
   month: 6
   type: 1
   stripeType: 2
+  isDouble: 0

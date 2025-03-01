@@ -17,7 +17,7 @@ public class GameManager : NetworkBehaviour
     
     public NetworkVariable<int> money = new NetworkVariable<int>();
     
-    [SerializeField] List<CardData> cards = new List<CardData>();
+    public List<CardData> cards = new List<CardData>();
     [SerializeField] Dictionary<ulong, PlayerManager> players = new Dictionary<ulong, PlayerManager> ();
     
 
@@ -62,19 +62,66 @@ public class GameManager : NetworkBehaviour
 
     public void StartGame()
     {
-        if (IsServer)
+        if (IsServer) // Server distributes the cards
         {
-            cards.Shuffle();
+            cards.Shuffle(); // Shuffle the deck
 
-            for (int i = 0; i < players.Count; i++)
+            foreach (var playerEntry in players) // Iterate over all players
             {
-                players.Values.ToList()[i].cardNums.Add(cards[i*2]);
-                players.Values.ToList()[i].cardNums.Add(cards[i*2+1]);
+                var player = playerEntry.Value;
+
+                if (player.cardNums.Count != 2)
+                {
+                    int index = players.Keys.ToList().IndexOf(playerEntry.Key) * 2;
+                    player.cardNums.Add(cards[index].CardID);
+                    player.cardNums.Add(cards[index + 1].CardID);
+                }
                 
-                // 0: 01, 1:23 2:45
+            }
+
+            for (int i = 0; i < players.Keys.Count; i++)
+            {
+                // Ensure the RPC is actually sent to the correct client
+                Debug.Log($"[StartGame] Sending ShowCardsRpc to Player {players.Keys.ToList()[i]} (OwnerClientId: {players.Keys.ToList()[i]})");
+
+                // Server sends an RPC to the **specific client** to show their cards
+                ShowCardsRpc(players.Keys.ToList()[i]);
             }
         }
     }
+
+
+    [Rpc(SendTo.ClientsAndHost, RequireOwnership = false)]  
+    public void ShowCardsRpc(ulong playerId)
+    {
+        Debug.Log($"[ShowCardsRpc] Received RPC for player: {playerId}, LocalClientId: {NetworkManager.Singleton.LocalClientId}");
+
+        if (NetworkManager.Singleton.LocalClientId == playerId) // Ensure only the correct player executes it
+        {
+            Debug.Log($"[TEST] ShowCardsRpc() CALLED ON CLIENT {playerId}");
+
+            foreach (var ublock in UiParent[playerId].GetComponentsInChildren<UserBlockManager>())
+            {
+                Debug.Log($"[ShowCardsRpc] Checking UI block with OwnerClientId {ublock.GetComponent<NetworkObject>().OwnerClientId}");
+
+                if (ublock.GetComponent<NetworkObject>().OwnerClientId == playerId)
+                {
+                    Debug.Log($"[ShowCardsRpc] Showing cards for Player {playerId}");
+                    ublock.ShowCards();
+                }
+            }
+        }
+        else
+        {
+            Debug.Log($"[ShowCardsRpc] Skipping execution for Player {playerId}, does not match LocalClientId {NetworkManager.Singleton.LocalClientId}");
+        }
+    }
+
+
+
+
+
+
 
     
 
@@ -86,29 +133,29 @@ public class GameManager : NetworkBehaviour
     
     void OnClientConnected(ulong clientId)
     {
-        if(IsHost)
+        if (IsHost)
         {
             NetworkClient nc = networkManager.ConnectedClients[clientId];
             clients.Add(nc);
-            
-            NetworkManager.Singleton.SpawnManager.InstantiateAndSpawn
+        
+            NetworkObject newPlayerObject = NetworkManager.Singleton.SpawnManager.InstantiateAndSpawn
             (
                 userListObj, clientId, false, false, false, Vector3.zero, Quaternion.identity
-            ).transform.SetParent(UiParent[(clients.Count - 1)%2]);
+            );
 
-            PlayerManager[] temp = UiParent[(clients.Count - 1) % 2].GetComponentsInChildren<PlayerManager>();
+            newPlayerObject.transform.SetParent(UiParent[(clients.Count - 1) % 2]);
+        
+            players.Add(clientId, newPlayerObject.GetComponent<PlayerManager>());
+
+            // 🔥 Ensure the correct client owns this object
+            newPlayerObject.ChangeOwnership(clientId);
+
+            Debug.Log($"[OnClientConnected] {clientId} connected, Assigned Ownership: {newPlayerObject.OwnerClientId}");
             
-            players.Add(clientId, temp[^1]);
-            
+            Debug.Log($"{players.Count}");
         }
-        
-        /*
-        if (clientId != 0)
-            networkManager.SpawnManager.SpawnedObjects[clientId].gameObject.transform.SetParent(UiParent[clientId%2]);
-        */
-        
-        Debug.LogAssertion($"ID {clientId} Joined");
     }
+
 
     void OnClientDisconnected(ulong clientId)
     {
@@ -118,7 +165,7 @@ public class GameManager : NetworkBehaviour
                 if (clients[i].ClientId == clientId)
                 {
                     //Debug.Log(NetworkManager.Singleton.SpawnManager.SpawnedObjects[clientId].name);
-                    players[clientId].gameObject.GetComponentInChildren<NetworkObject>().Despawn(true);
+                    //players[clientId].gameObject.GetComponentInChildren<NetworkObject>().Despawn(true);
                     players.Remove(clientId);
                     clients.RemoveAt(i);
                 }
