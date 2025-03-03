@@ -187,6 +187,133 @@ public class GameManager : NetworkBehaviour
             NetworkManager.Singleton.OnClientDisconnectCallback -= OnClientDisconnected;
         }
     }
+
+    public void resetGame()
+    {
+        if (IsServer)
+        {
+            Debug.Log("[resetGame] Resetting game...");
+            CheckWinner();
+            foreach (PlayerManager player in players.Values)
+            {
+                player.cardNums.Clear(); // Clear previous cards
+                player.gameObject.GetComponent<UserBlockManager>().HideCards();
+            }
+
+            // Shuffle and deal new cards
+            cards.Shuffle();
+            AssignNewCards();
+        }
+    }
+
+    
+    void AssignNewCards()
+    {
+        if (IsServer)
+        {
+            int i = 0;
+            foreach (var playerEntry in players)
+            {
+                var player = playerEntry.Value;
+
+                // Assign new cards
+                player.cardNums.Add(cards[i].CardID);
+                player.cardNums.Add(cards[i + 1].CardID);
+                i += 2;
+            }
+        }
+    }
+
+    void CheckWinner()
+    {
+        if (IsServer)
+        {
+            Dictionary<ulong, int> winners = new Dictionary<ulong, int>();
+
+            foreach (HandManager hand in FindObjectsByType<HandManager>(FindObjectsSortMode.None))
+            {
+                ulong clientId = hand.gameObject.GetComponent<NetworkObject>().OwnerClientId;
+                int score = hand.handNumber();
+                winners.Add(clientId, score);
+                Debug.Log($"[CheckWinner] Player {clientId} has won {score}");
+            }
+
+            // Determine the winner (Highest Score Wins)
+            ulong winnerId = winners.OrderByDescending(entry => entry.Value).First().Key;
+
+            Debug.Log($"[CheckWinner] Winner is Client {winnerId} with Score {winners[winnerId]}");
+
+            // Notify the winner
+            HitWinnerRpc(winnerId);
+
+            // Reveal all players' cards after 2 seconds (for effect)
+            RevealAllCards();
+        }
+    }
+
+
+    [Rpc(SendTo.Everyone, RequireOwnership = false)]
+    void HitWinnerRpc(ulong clientId)
+    {
+        Debug.Log($"[HitWinnerRpc] Received RPC. Checking if LocalClientId ({NetworkManager.Singleton.LocalClientId}) matches winnerId ({clientId})");
+
+        if (NetworkManager.Singleton.LocalClientId == clientId)
+        {
+            Debug.Log($"[HitWinnerRpc] Local client is the winner! Updating UI.");
+        
+            if (players.ContainsKey(clientId))
+            {
+                players[clientId].gameObject.GetComponent<UserBlockManager>().HitCard();
+            }
+            else
+            {
+                Debug.LogError($"[HitWinnerRpc] PlayerManager for client {clientId} not found!");
+            }
+        }
+    }
+
+
+    
+    //TODO: Clients can see all cards but Host can not fix this.
+    
+    void RevealAllCards()
+    {
+        if (IsServer)
+        {
+            foreach (var player in players)
+            {
+                ulong playerId = player.Key;
+                //Debug.Log($"[RevealAllCards] Sending cards of Player {playerId}: {string.Join(", ", cardIds)}");
+
+                // Notify all clients about each player's cards
+                ShowOpponentCardsRpc(playerId);
+            }
+        }
+    }
+
+
+    
+    [Rpc(SendTo.ClientsAndHost, RequireOwnership = false)]
+    void ShowOpponentCardsRpc(ulong playerId)
+    {
+        Debug.Log($"[ShowOpponentCardsRpc] Revealing Player {playerId}'s cards. LocalClientId: {NetworkManager.Singleton.LocalClientId}");
+
+        foreach (UserBlockManager block in FindObjectsByType<UserBlockManager>(FindObjectsSortMode.None))
+        {
+            ulong ownerId = block.GetComponent<NetworkObject>().OwnerClientId;
+            Debug.Log($"[ShowOpponentCardsRpc] Checking UI block for player {ownerId}");
+
+            // Ensure correct owner is being revealed
+            if (ownerId == playerId)
+            {
+                Debug.Log($"[ShowOpponentCardsRpc] Updating UI for Player {ownerId}");
+                block.ShowCards();
+            }
+        }
+    }
+
+
+
 }
 
 public static class ListExtensions

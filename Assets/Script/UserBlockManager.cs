@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +12,11 @@ public class UserBlockManager : MonoBehaviour
     PlayerManager playerManager;
     GameManager gameManager;
     
+    [Header("User Info")]
+    [SerializeField] TMP_Text userNameText;
+    [SerializeField] private TMP_Text userMoneyText;
+    
+    [Header("Cards")]
     [SerializeField] Image backGround;
     [SerializeField] GameObject handObj;
     [SerializeField] Sprite backImage;
@@ -18,6 +25,22 @@ public class UserBlockManager : MonoBehaviour
     {
         playerManager = GetComponent<PlayerManager>();
         gameManager = FindObjectOfType<GameManager>();
+    }
+
+    private void Start()
+    {
+        //if(playerManager != null)
+            //userNameText.text = NetworkManager.Singleton.LocalClient.;
+    }
+
+    private void Update()
+    {
+        
+    }
+
+    public void HitCard()
+    {
+        backGround.color = Color.red;
     }
 
     public void Expand()
@@ -40,7 +63,7 @@ public class UserBlockManager : MonoBehaviour
         if (handObj.activeSelf)
         {
             Image[] cardImages = handObj.GetComponentsInChildren<Image>();
-            Debug.Log(cardImages.Length);
+            //Debug.Log(cardImages.Length);
             cardImages[0].sprite = GetCardSprite(playerManager.cardNums[0]);
             cardImages[1].sprite = GetCardSprite(playerManager.cardNums[1]);
         }
@@ -61,7 +84,7 @@ public class UserBlockManager : MonoBehaviour
         return card != null ? card.Sprite() : null;
     }
     
-    private CardData FindCardById(int cardId)
+    public CardData FindCardById(int cardId)
     {
         return gameManager.cards.FirstOrDefault(c => c.CardID == cardId);
     }

@@ -7,7 +7,9 @@ using UnityEngine;
 
 public class HandManager : MonoBehaviour
 {
-    private List<CardObj> hands = new List<CardObj>();
+    PlayerManager playerManager;
+    UserBlockManager userBlockManager;
+    public List<CardData> hands = new List<CardData>();
     
     private List<List<m_Month>> tree = new List<List<m_Month>>
     {
@@ -23,11 +25,17 @@ public class HandManager : MonoBehaviour
     
     private void Awake()
     {
-        hands = GetComponentsInChildren<CardObj>().ToList();
+        playerManager = GetComponent<PlayerManager>();
+        userBlockManager = GetComponent<UserBlockManager>();
+        
     }
-    
-    public void setHands(List<CardObj> hands){this.hands = hands;}
-    
+
+    private void Start()
+    {
+        
+    }
+
+
     bool AreListsEqual<T>(List<T> list1, List<T> list2)
     {
         return list1.Count == list2.Count && !list1.Except(list2).Any() && !list2.Except(list1).Any();
@@ -39,7 +47,7 @@ public class HandManager : MonoBehaviour
         {
             List<m_Month> temp = new List<m_Month>
             {
-                hands[0]._cardData.Month, hands[1]._cardData.Month
+                hands[0].Month, hands[1].Month
             };
             
             
@@ -51,15 +59,28 @@ public class HandManager : MonoBehaviour
 
     public int handNumber()
     {
-        if(hands[0]._cardData.isLight() && hands[1]._cardData.isLight())
-            if (hands[0]._cardData.Month == m_Month.March || hands[1]._cardData.Month == m_Month.March)
+        CardData card1 = userBlockManager.FindCardById(playerManager.cardNums[0]);
+        CardData card2 = userBlockManager.FindCardById(playerManager.cardNums[1]);
+
+        if (card1 == null || card2 == null)
+        {
+            Debug.LogError("FindCardById returned null for one or both cards.");
+        }
+
+        hands.Add(card1);
+        hands.Add(card2);
+        
+        
+        if(hands[0].isLight() && hands[1].isLight())
+            if (hands[0].Month == m_Month.March || hands[1].Month == m_Month.March)
                 return 30;
             else 
                 return 29;
-        if(hands[0]._cardData.Month == hands[1]._cardData.Month)
-            return (int)hands[0]._cardData.Month + 18;
+        if(hands[0].Month == hands[1].Month)
+            return (int)hands[0].Month + 18;
         if(isInTree() == -1)
-            return ((int)hands[0]._cardData.Month + (int)hands[1]._cardData.Month + 2) % 10;
+            return ((int)hands[0].Month + (int)hands[1].Month + 2) % 10;
+        
         return isInTree();
     }
     
